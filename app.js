@@ -44,7 +44,7 @@ const upload = multer({ dest: 'uploads/' })
 //     }
 //   })
   
-const upload = multer({ storage: storage })
+// const upload = multer({ storage: storage })
 
 app.listen(port, (err, res) => {
     console.log("Listening at", port)
