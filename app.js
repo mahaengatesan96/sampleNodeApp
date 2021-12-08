@@ -46,7 +46,7 @@ const upload = multer({ dest: 'uploads/' })
   
 // const upload = multer({ storage: storage })
 
-app.listen(port, (err, res) => {
+app.listen(process.env.PORT || port, (err, res) => {
     console.log("Listening at", port)
 })
 
